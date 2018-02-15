@@ -7,7 +7,7 @@
 	<tbody>
 		<tr *ngFor="let sem of dias">
 			<td *ngFor="let w of [0,1,2,3,4,5,6]">
-				<div *ngFor="let d of sem.days">
+				<div *ngFor="let d of sem.days" (click)="dayClick(d.dia)">
 					<span *ngIf="d.num == w">{{d.dia}}</span>
 				</div>
 			</td>

@@ -57,4 +57,8 @@ export class CalendarioComponent implements OnInit {
 		return weekRow;
 	}
 
+	dayClick(d) {
+		alert(d)
+	}
+
 }
