@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { CalendarioComponent } from './calendario/calendario.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CalendarioComponent
   ],
   imports: [
     BrowserModule

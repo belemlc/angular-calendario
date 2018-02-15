@@ -1,0 +1,16 @@
+<table border="1">
+	<thead>
+		<tr>
+			<th *ngFor="let semana of semanas;">{{semana}}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let sem of dias">
+			<td *ngFor="let w of [0,1,2,3,4,5,6]">
+				<div *ngFor="let d of sem.days">
+					<span *ngIf="d.num == w">{{d.dia}}</span>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
